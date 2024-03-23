@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<center>
+    <h1>L6 Practice</h1>
+    <p>Video - Play, pause and Stop</p>
+    <video src="COW.mp4" id="Video1" width="400"></video>
+    <audio src="londonbridge.mp3" id="Audio"></audio>
+    <script> 
+        function VideoPlay(){
+            document.getElementById("Video1").play();
+        }
+        function VideoPause(){
+            document.getElementById("Video1").pause();
+        }
+        function VideoStop(){
+            document.getElementById("Video1").pause();
+            document.getElementById("Video1").currentTime=0;
+        }
+    </script>
+    
+    <br></br>
+    <button onclick="VideoPlay()">PLAY</button>
+    <button onclick="VideoPause()">PAUSE</button>
+    <button onclick="VideoStop()">RESTART</button>
+    </td>
+
+    <td>
+    <br></br>
+    <p>Audio - Play, pause and Stop</p>
+    <br><img src="music.jpg" width="320"> </br>
+    <script> 
+        function AudioPlay(){
+            document.getElementById("Audio").play();
+        }
+        function AudioPause(){
+            document.getElementById("Audio").pause();
+        }
+        function AudioStop(){
+            document.getElementById("Audio").pause();
+            document.getElementById("Audio").currentTime=0;
+        }
+    </script>
+    <button onclick="AudioPlay()">PLAY</button>
+    <button onclick="AudioPause()">PAUSE</button>
+    <button onclick="AudioStop()">RESTART</button>
+</table>
+</center>
+</body>
+
+</html>
